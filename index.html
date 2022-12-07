@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Акватерапия</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <svg style="display: none;">
+      <symbol id="decor-leaf" viewBox="0 0 28 14">
+        <g>
+          <path
+            d="M0 0H14C21.732 0 28 6.26801 28 14H14C6.26801 14 0 7.73199 0 0Z"
+          />
+        </g>
+      </symbol>
+    </svg>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <img
+            src="img/header-logo.svg"
+            alt="Logo"
+            wight="60px"
+            height="60px"
+            class="header__logo"
+          />
+          <ul class="header__nav">
+            <li><a href="#" class="nav__item">Главная</a></li>
+            <li><a href="#" class="nav__item">Сеансы</a></li>
+            <li><a href="#" class="nav__item">Отзывы</a></li>
+            <li><a href="#" class="nav__item">Контакты</a></li>
+            <li><a href="#" class="nav__item">Новости</a></li>
+            <li><a href="#" class="nav__item">Обо мне</a></li>
+            <li><a href="#" class="nav__item">Блог</a></li>
+          </ul>
+          <button type="button" class="button button--blue">
+            Записаться на сеанс
+          </button>
+        </nav>
+        <div class="main-screen">
+          <div class="suptitle">
+            <svg class="decor-leaf">
+              <use xlink:href="#decor-leaf"></use>
+            </svg>
+            <p class="suptitle__text">Укрепление здоровья</p>
+            <svg class="decor-leaf decor--right">
+              <use xlink:href="#decor-leaf"></use>
+            </svg>
+          </div>
+          <h1 class="header__title">Акватерапия RitmStyle</h1>
+        </div>
+      </div>
+    </header>
+    <!-- Seances -->
+    <section class="seances">
+      <div class="container">
+        <div class="title__box">
+          <svg class="decor-leaf decor--blue">
+            <use xlink:href="#decor-leaf"></use>
+          </svg>
+          <h2>Сеансы RitmStyle</h2>
+          <svg class="decor-leaf decor--right decor--blue">
+            <use xlink:href="#decor-leaf"></use>
+          </svg>
+        </div>
+
+        <div class="seances__tilebox">
+          <div class="seances__column">
+            <a href="#" class="seances__item item__standart">
+              <h3 class="seances__title">Стандартный RitmStyle</h3>
+            </a>
+          </div>
+          <div class="seances__column">
+            <a href="#" class="seances__item">
+              <h3 class="seances__title">RitmStyle для пар</h3>
+            </a>
+            <a href="#" class="seances__item">
+              <h3 class="seances__title">RitmStyle для беременных</h3>
+            </a>
+          </div>
+          <div class="seances__column">
+            <a href="#" class="seances__item">
+              <h3 class="seances__title">
+                RitmStyle с полным погружением под воду
+              </h3>
+            </a>
+            <a href="#" class="seances__item">
+              <h3 class="seances__title">
+                RitmStyle + красочная подводная фотосессия
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+
+    <section class="reviews">
+      <div class="title__box">
+        <svg class="decor-leaf decor--blue">
+          <use xlink:href="#decor-leaf"></use>
+        </svg>
+        <h2>Отзывы</h2>
+        <svg class="decor-leaf decor--right decor--blue">
+          <use xlink:href="#decor-leaf"></use>
+        </svg>
+      </div>
+      <div class="reviews__block">
+        <article class="reviews__card" data-tab="#card_1">
+          <h4 class="reviews__title" id="card_1">Александра Дмитриева</h4>
+          <div class="reviews__text" id="card_1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              totam nihil architecto earum molestias porro voluptatibus suscipit
+              maiores omnis odit reprehenderit, repellendus commodi harum ad.
+              cupiditate beatae, laborum aliquid nisi dolor tempore. Nobis
+              doloribus explicabo nesciunt mollitia.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+              excepturi magnam, ducimus culpa consectetur iure ut ipsa ipsum,
+              cupiditate beatae, laborum aliquid nisi dolor tempore. Nobis
+              dolori
+            </p>
+          </div>
+        </article>
+        <article class="reviews__card active" data-tab="#card_2">
+          <h4 class="reviews__title active" id="card_2">Кира Иванова</h4>
+          <div class="reviews__text active" id="card_2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              totam nihil architecto earum molestias porro voluptatibus suscipit
+              maiores
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+              excepturi magnam, ducimus culpa consectetur iure ut ipsa ipsum,
+              cupiditate beatae, laitia. i magnam, ducimus culpa consectetur
+              iure ut ipsa ipsum, cupiditate beatae, laborum aliquid nisi dolor
+              tempore. Nobis doloribus explicabo nesciunt mollitia.
+            </p>
+          </div>
+        </article>
+        <article class="reviews__card" data-tab="#card_3">
+          <h4 class="reviews__title" id="card_3">Яна Жернова</h4>
+          <div class="reviews__text" id="card_3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              totam nihil architecto earum molestias porro voluptatibus suscipit
+              maiores omnis odit reprehenderit, repellendus commodi harum ad.
+              cupiditate beatae, laborum aliquid nisi dolor tempore. Nobis
+              doloribus explicabo nesciunt mollitia.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+              excepturi magnam, ducimus culpa consectetur iure ut ipsa ipsum,
+              cupiditate beatae, laborum aliquid nisi dolor tempore. Nobis
+              doloribus explicabo nesciunt mollitia. i magnam, ducimus culpa
+              consectetur iure ut ipsa ipsum, cupiditate beatae, laborum aliquid
+              nisi dolor tempore. Nobis doloribus explicabo nesciunt mollitia.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="slider-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about">
+      <div class="container">
+        <div class="title__box">
+          <svg class="decor-leaf decor--blue">
+            <use xlink:href="#decor-leaf"></use>
+          </svg>
+          <h2>Об RitmStyle</h2>
+          <svg class="decor-leaf decor--right decor--blue">
+            <use xlink:href="#decor-leaf"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

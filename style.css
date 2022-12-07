@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/proxima_nova/ProximaNova-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  font-style: normal;
+  src: url("fonts/proxima_nova/ProximaNova-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/proxima_nova/ProximaNova-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/proxima_nova/ProximaNova-Light.woff") format("woff");
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+p {
+  margin-bottom: 15px;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 300;
+
+  background-color: #162831;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-family: "El Messiri", sans-serif;
+}
+h2 {
+  font-size: 42px;
+  margin: 0 45px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1326px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 3px;
+
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.1s ease;
+}
+.button:hover {
+  box-shadow: inset 0 -5px 0 #00b7ff;
+}
+
+.button--blue {
+  background-color: #018abe;
+  color: #fff;
+}
+
+/*---------------Header------------------*/
+.nav {
+  padding: 30px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.nav__item {
+  margin-left: 50px;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.2s;
+}
+.header__nav li:first-child > a {
+  margin: 0;
+}
+
+.nav__item:hover {
+  border-bottom: 2px solid #018abe;
+  color: #018abe;
+}
+
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 140px 0 230px;
+
+  width: 100%;
+  background: url(img/header-bg.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.suptitle {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.suptitle__text {
+  margin: 0 66px;
+  font-family: "El Messiri", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header__title {
+  max-width: 580px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 64px;
+  margin: 40px 0 0;
+}
+
+.decor-leaf {
+  width: 28px;
+  height: 14px;
+  fill: #fff;
+}
+
+.decor--right {
+  transform: scale(-1, 1);
+}
+.decor--blue {
+  fill: #018abe;
+}
+
+/*---------------Seances------------------*/
+
+.title__box {
+  margin: 150px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seances__tilebox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -12px;
+  min-height: 540px;
+}
+.seances__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+.seances__column {
+  min-width: 235px;
+  display: flex;
+  flex-direction: column;
+
+  width: 33.33333%;
+}
+.seances__item {
+  background: gray url(img/seances-img.jpg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+  min-height: 258px;
+  margin: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 40px 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.item__standart {
+  padding: 0 100px 50px 50px;
+}
+
+.seances__item:hover {
+  box-shadow: inset 0 -10px #018abe;
+}
+
+/*---------------Reviews------------------*/
+
+.reviews__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.reviews__card {
+  overflow: hidden;
+  margin: 0 20px;
+  width: 100%;
+  padding: 40px 45px;
+  max-width: 500px;
+  height: 276px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  background-color: #018abe;
+
+  opacity: 0.5;
+
+  transition: transform 0.5s ease;
+}
+
+.reviews__card::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+.reviews__card::-webkit-scrollbar {
+  width: 3px;
+}
+.reviews__card::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #00b7ff;
+}
+
+.reviews__block {
+  padding: 0 15px;
+  margin: 0 -20px;
+}
+
+.reviews__card.active {
+  overflow: auto;
+  cursor: auto;
+  padding: 50px 60px;
+  max-width: 636px;
+  height: 350px;
+
+  opacity: 1;
+}
+
+.reviews__title {
+  font-family: "ProximaNova", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.reviews__title.active {
+  font-size: 20px;
+}
+
+.reviews__text {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 300;
+}
+.reviews__text.active {
+  font-size: 14px;
+}
+
+.slider-dots {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 60px;
+}
+.dot {
+  margin-left: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  opacity: 0.4;
+
+  border-radius: 3px;
+}
+.slider-dots .dot:first-child {
+  margin: 0;
+}
