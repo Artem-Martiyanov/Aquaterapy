@@ -1,2 +1,0 @@
-# Aquaterapy
-Created with CodeSandbox
